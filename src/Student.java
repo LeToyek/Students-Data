@@ -37,13 +37,12 @@ class Student {
            System.out.print("Enroll course (Q to quit)");
            String course = in.nextLine();
            if(!course.equals("Q")){
-               courses = courses + "\n" + course;
                tuitionBalance = tuitionBalance + courseCost;
            } else {
                break;
            }
        } while (1 != 0);
-       System.out.println("ENROLLED IN : " + courses);
+       System.out.println("ENROLLED IN : ");
        System.out.println("TUITION BALLANCE : " + tuitionBalance);
    }
    public void viewBalance(){
@@ -60,7 +59,7 @@ class Student {
 
     @Override
     public String toString() {
-        return "Student\n" +
+        return "\nStudent\n" +
                 "firstName\t= " + firstName + "\n" +
                 "lastName\t= " + lastName + "\n" +
                 "grade\t\t= " + grade + "\n" +
